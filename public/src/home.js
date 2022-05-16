@@ -54,6 +54,14 @@ function getMostPopularAuthors(books, authors) {
   return popularAuthors.slice(0, 5);
 }
 
+/*
+Possible helper function to incorporate for identifying the first five items in a list
+function fiveFirst(arrayOfItems) {
+  let topFive = arrayOfItems
+    .sort((countA, countB) => (countA.count < countB.count ? 1 : -1))
+    .slice(0, 5);
+*/
+
 module.exports = {
   getTotalBooksCount,
   getTotalAccountsCount,
